@@ -15,6 +15,7 @@ module.exports = {
     'comma-dangle': 0,
     'prettier/prettier': 'error',
     'object-curly-newline': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
 }
