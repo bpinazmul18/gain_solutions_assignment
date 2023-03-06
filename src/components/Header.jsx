@@ -1,5 +1,7 @@
 import React from 'react'
 
+import searchIcon from '../assets/img/search.svg'
+
 function Header() {
   return (
     <header>
@@ -20,9 +22,7 @@ function Header() {
                 aria-label="logo"
                 className="flex space-x-2 items-center"
               >
-                <span className="text-3.1xl leading-12 text-base font-bold text-gray-600 dark:text-white">
-                  LOGO
-                </span>
+                <span className="text-fs-31 font-bold text-white">LOGO</span>
               </a>
               <label
                 htmlFor="hbr"
@@ -30,61 +30,38 @@ function Header() {
               >
                 <div
                   aria-hidden="true"
-                  className="m-auto h-0.5 w-6 rounded bg-gray-900 dark:bg-gray-300 transition duration-300"
+                  className="m-auto h-0.5 w-6 rounded bg-white transition duration-300"
                 />
                 <div
                   aria-hidden="true"
-                  className="m-auto mt-2 h-0.5 w-6 rounded bg-gray-900 dark:bg-gray-300 transition duration-300"
+                  className="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"
                 />
               </label>
             </div>
-
-            <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
-              <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
-                <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
-                  <li>
-                    <a
-                      href="!#"
-                      className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
-                    >
-                      <span>Home</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="!#"
-                      className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
-                    >
-                      <span>Portfolio</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="!#"
-                      className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
-                    >
-                      <span>Services</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-full space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l">
-                <a
-                  href="!#"
-                  className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-                >
-                  <span className="relative text-sm font-semibold text-primary dark:text-primaryLight">
-                    Sign Up
-                  </span>
-                </a>
-                <a
-                  href="!#"
-                  className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-                >
-                  <span className="relative text-sm font-semibold text-primary dark:text-primaryLight">
-                    Login
-                  </span>
-                </a>
+            {/* TODO */}
+            <div className="navmenu hidden w-full flex-wrap justify-end items-center space-y-8 p-6 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:w-7/12">
+              <div className=" lg:pr-4">
+                <div className="flex items-center">
+                  <form className="group relative mb-4 lg:mb-0">
+                    <img
+                      className="absolute right-7 top-1/2 -mt-2.5 "
+                      src={searchIcon}
+                      alt="Search Icon"
+                    />
+                    <input
+                      className="w-full font-normal text-fs-15 bg-viridian-green outline-none border py-3 px-6 text-white placeholder-white"
+                      type="text"
+                      aria-label="Search by Title or Brand"
+                      placeholder="Search by Title or Brand..."
+                    />
+                  </form>
+                  <button
+                    type="button"
+                    className="text-fs-15 font-medium py-3 px-6 text-viridian-green bg-cultured ml-0 lg:ml-2.5 rounded-sm"
+                  >
+                    Add Product
+                  </button>
+                </div>
               </div>
             </div>
           </div>
