@@ -8,6 +8,15 @@ module.exports = {
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
     },
+    fontSize: {
+      '3.1xl': '1.96rem',
+    },
+    lineHeight: {
+      12: '2.93rem',
+    },
+    colors: {
+      'viridian-green': '#0095A0',
+    },
   },
   plugins: [],
 }

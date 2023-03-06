@@ -17,5 +17,14 @@ module.exports = {
     'object-curly-newline': 'off',
     'import/no-extraneous-dependencies': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        labelComponents: ['FormLabel'],
+        labelAttributes: ['label'],
+        controlComponents: ['input'],
+        depth: 1,
+      },
+    ],
   },
 }
