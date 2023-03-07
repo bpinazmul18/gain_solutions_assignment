@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="xl:container m-auto px-6 md:px-12">{children}</main>
     </>
   )
 }

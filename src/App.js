@@ -1,9 +1,13 @@
 import React from 'react'
 import './App.css'
+import Statistics from './components/charts/statistics'
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline font-poppins">Hello world!</h1>
+    <>
+      <Statistics />
+      hello
+    </>
   )
 }
 export default App

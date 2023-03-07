@@ -16,6 +16,8 @@ module.exports = {
     'prettier/prettier': 'error',
     'object-curly-newline': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'react/no-array-index-key': 'off',
+    'react/jsx-one-expression-per-line': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'jsx-a11y/label-has-associated-control': [
       2,
