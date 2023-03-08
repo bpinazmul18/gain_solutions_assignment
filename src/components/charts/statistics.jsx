@@ -1,12 +1,12 @@
 import React from 'react'
 import PhonesPieChart from './PhonesPieChart'
-import BarChart from './BarChart'
+import PhonesBarChart from './PhonesBarChart'
 
 function Statistics() {
   return (
-    <div className="py-[50px] flex items-center justify-between">
+    <div className="py-[50px] flex justify-between">
       <PhonesPieChart />
-      <BarChart />
+      <PhonesBarChart />
     </div>
   )
 }

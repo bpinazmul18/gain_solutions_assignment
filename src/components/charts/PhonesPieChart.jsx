@@ -32,7 +32,7 @@ function PhonesPieChart() {
             ))}
           </Pie>
         </PieChart>
-        <ul>
+        <ul className="flex flex-col justify-center">
           {data.map((entry, index) => (
             <li className="flex items-center" key={`label-${index}`}>
               <div
