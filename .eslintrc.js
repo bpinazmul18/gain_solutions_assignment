@@ -13,6 +13,8 @@ module.exports = {
   rules: {
     semi: 0,
     'comma-dangle': 0,
+    'no-bitwise': 'off',
+    'operator-linebreak': 'off',
     'prettier/prettier': 'error',
     'object-curly-newline': 'off',
     'import/no-extraneous-dependencies': 'off',

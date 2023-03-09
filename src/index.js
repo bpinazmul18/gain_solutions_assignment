@@ -1,16 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import { Provider } from 'react-redux'
+import configureStore from './store/configureStore'
+
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import Layout from './components/layouts/Layout'
 
+const store = configureStore()
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <Layout>
-      <App />
-    </Layout>
+    <Provider store={store}>
+      <Layout>
+        <App />
+      </Layout>
+    </Provider>
   </React.StrictMode>
 )
 

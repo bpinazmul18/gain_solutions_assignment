@@ -21,7 +21,7 @@ function TableHeader({ columns }) {
 }
 
 TableHeader.propTypes = {
-  columns: PropTypes.arrayOf.isRequired,
+  columns: PropTypes.instanceOf(Array).isRequired,
 }
 
 export default TableHeader

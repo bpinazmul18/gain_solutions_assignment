@@ -4,7 +4,7 @@ import PhoneTable from './PhoneTable'
 function Products() {
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-5">
         <h2 className="text-fs-24 font-semibold text-davys-grey">
           ALL Products
         </h2>

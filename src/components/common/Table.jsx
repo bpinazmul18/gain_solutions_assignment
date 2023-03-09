@@ -16,7 +16,7 @@ function Table({ columns }) {
 }
 
 Table.propTypes = {
-  columns: PropTypes.arrayOf.isRequired,
+  columns: PropTypes.instanceOf(Array).isRequired,
 }
 
 export default Table
