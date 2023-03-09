@@ -24,6 +24,8 @@ module.exports = {
       cultured: '#F7F5F2',
       'sonic-silver': '#74777B',
       'davys-grey': '#575757',
+      gray: '#B7B8BC',
+      'white-next': '#FDFDFF',
       ...colors,
     },
   },
