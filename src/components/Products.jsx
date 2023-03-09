@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import PhoneTable from './PhoneTable'
 
-function Products() {
+function Products({ products }) {
   return (
     <div>
       <div className="flex items-center justify-between mb-5">
@@ -41,9 +42,13 @@ function Products() {
           </div>
         </div>
       </div>
-      <PhoneTable />
+      <PhoneTable products={products} />
     </div>
   )
+}
+
+Products.propTypes = {
+  products: PropTypes.instanceOf(Array).isRequired,
 }
 
 export default Products

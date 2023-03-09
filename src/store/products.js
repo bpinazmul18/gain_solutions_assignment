@@ -18,7 +18,7 @@ const slice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getProducts.fulfilled, (products, action) => {
-      products.list.push(action.payload)
+      products.list.push(...action.payload)
     })
   },
 })

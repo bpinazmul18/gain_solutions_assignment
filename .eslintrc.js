@@ -17,6 +17,7 @@ module.exports = {
     'operator-linebreak': 'off',
     'prettier/prettier': 'error',
     'object-curly-newline': 'off',
+    'no-underscore-dangle': 'off',
     'import/no-extraneous-dependencies': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-one-expression-per-line': 'off',
