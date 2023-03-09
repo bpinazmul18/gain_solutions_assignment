@@ -26,6 +26,7 @@ module.exports = {
       'davys-grey': '#575757',
       gray: '#B7B8BC',
       'white-next': '#FDFDFF',
+      'ghost-white': '#F8F8FA',
       ...colors,
     },
   },

@@ -1,4 +1,5 @@
 import React from 'react'
+import PhoneTable from './PhoneTable'
 
 function Products() {
   return (
@@ -40,6 +41,7 @@ function Products() {
           </div>
         </div>
       </div>
+      <PhoneTable />
     </div>
   )
 }
