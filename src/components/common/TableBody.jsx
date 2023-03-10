@@ -51,9 +51,11 @@ function TableBody({ data, columns }) {
   return (
     <tbody>
       {data.map((item) => (
-        <tr key={item._id}>
+        <tr className="border-b border-ghost-white" key={item._id}>
           {columns.map((column) => (
-            <td key={createKey(item, column)}>{renderCell(item, column)}</td>
+            <td key={createKey(item, column)}>
+              <div className="py-5">{renderCell(item, column)}</div>
+            </td>
           ))}
         </tr>
       ))}
