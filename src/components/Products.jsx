@@ -15,7 +15,7 @@ function Products({ products }) {
           </div>
           <div className="relative group">
             <select
-              className="focus:outline-none font-normal text-fs-16 text-sonic-silver py-3 px-[30px] appearance-none border border-gray bg-white-next group-hover:bg-viridian-green group-hover:text-white"
+              className="focus:outline-none font-normal text-fs-16 text-sonic-silver py-3 px-[30px] appearance-none border border-gray-next bg-white-next group-hover:bg-viridian-green group-hover:text-white"
               name="sortBy"
               id="sortBy"
             >
