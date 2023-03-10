@@ -32,7 +32,7 @@ function Modal({ title, children }) {
               &#8203;
             </span>
 
-            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-[900px]">
               {/* Modal Header */}
               <div className="bg-viridian-green py-[27px] px-[30px] flex items-center justify-between">
                 <h4 className="text-white font-semibold text-fs-22">{title}</h4>

@@ -8,6 +8,7 @@ import { getProducts } from './store/products'
 
 import './App.css'
 import Modal from './components/common/Modal'
+import Form from './components/common/Form'
 
 function App() {
   const products = useSelector((state) => state.entities.products.list)
@@ -21,7 +22,7 @@ function App() {
       <Statistics />
       <Products products={products} />
       <Modal title="Add Product">
-        <h1>hi</h1>
+        <Form />
       </Modal>
     </>
   )
