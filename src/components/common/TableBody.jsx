@@ -5,7 +5,7 @@ function TableBody({ data, columns }) {
   const createKey = (item, column) => item._id + (column.path || column.key)
 
   const renderCell = (item, column) => {
-    if (typeof column.path === 'object') {
+    if (column.columnNumber === 0) {
       return (
         <div className="flex items-center">
           <img
@@ -25,13 +25,33 @@ function TableBody({ data, columns }) {
       )
     }
 
-    return <div>Hi</div>
+    if (column.columnNumber === 1) {
+      return (
+        <div className="font-medium text-fs-16 text-sonic-silver">
+          {item[column.path].ram}/{item[column.path].internal_storage}
+        </div>
+      )
+    }
+
+    if (column.columnNumber === 2) {
+      return (
+        <div className="w-96 flex items-center flex-wrap">
+          {item[column.path].map((tag) => (
+            <div className="font-normal text-fs-12 py-1 px-[18px]" key={tag}>
+              {tag}
+            </div>
+          ))}
+        </div>
+      )
+    }
+
+    return <div>TK {item[column.path]}</div>
   }
 
   return (
     <tbody>
       {data.map((item) => (
-        <tr className="my-5" key={item._id}>
+        <tr key={item._id}>
           {columns.map((column) => (
             <td key={createKey(item, column)}>{renderCell(item, column)}</td>
           ))}

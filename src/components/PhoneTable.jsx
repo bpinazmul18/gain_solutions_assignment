@@ -8,10 +8,15 @@ function PhoneTable({ products }) {
     {
       path: ['phone_images', 'phone_details.model', 'phone_title'],
       label: 'Model',
+      columnNumber: 0,
     },
-    { path: 'phone_details', label: 'Ram/Rom' },
-    { path: 'tag', label: 'Tag' },
-    { path: 'price', label: 'Price' },
+    {
+      path: 'phone_details',
+      label: 'Ram/Rom',
+      columnNumber: 1,
+    },
+    { path: 'speciality', label: 'Tag', columnNumber: 2 },
+    { path: 'phone_price', label: 'Price', columnNumber: 3 },
   ]
 
   return <Table columns={columns} data={products} />
