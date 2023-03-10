@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from './Input'
+import InputSelect from './InputSelect'
 
 function Form() {
   return (
@@ -28,6 +29,13 @@ function Form() {
           />
         </div>
       </div>
+      <InputSelect label="Tags" inputHint="Search and Select" />
+      <Input
+        type="text"
+        name="price"
+        label="Price"
+        inputHint="Enter your product price"
+      />
     </form>
   )
 }
